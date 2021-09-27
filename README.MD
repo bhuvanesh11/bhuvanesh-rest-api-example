@@ -5,12 +5,15 @@ This is just a small implementation of rest api based on the requirement
 The app s based on flask.
 
 ######## initialize db ########
+
 install sqlite and the run the shell script create_table.sh
 
 ######## Build docker image ########
+
 docker build -t flask-example .
 
 ######## Run app ########
+
 docker run --rm -it -v /path/to/db/file:/db -p '8080:5000' flask-example
 
 ######## Test using ########
